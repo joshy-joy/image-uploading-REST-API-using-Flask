@@ -1,0 +1,15 @@
+
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal">Image App</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 text-dark active" href="/" style="text-decoration: none;">Home</a>
+    </nav>
+
+    <nav class="my-2 my-md-0 mr-md-3 navbar-right">
+      {% if session.logged_in %}
+        <a class="p-2 text-dark" style="text-decoration: none;" href="/img_upload">Upload Image</a>
+        <a class="p-2 text-dark btn btn-primary" href="/logout">Logout</a>
+      {% endif %}
+        
+    </nav>
+</div>

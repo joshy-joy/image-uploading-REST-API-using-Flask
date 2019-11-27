@@ -1,0 +1,17 @@
+{% extends 'base_template.html' %}
+
+{% block body %}
+
+<h1>Login</h1>
+    <form  method="POST" action="">
+        <div class="form-group">
+            <label >User Name</label>
+            <input type="text" name="username"  class="form-control" placeholder="User Name" >
+            <label>Password</label>
+            <input type="password" name="password"  class="form-control" placeholder="Password" >
+        </div>
+    <button class="btn btn-primary " type="submit">Sign in</button>
+</form>
+
+
+{% endblock %}

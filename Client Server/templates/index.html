@@ -1,0 +1,21 @@
+{% extends 'base_template.html' %}
+
+{% block body %}
+
+<div class="jumbotron text-center">
+        <h1>Image App</h1>
+        <p class="lead">Login is required to Authorize the REST API Services.</p>
+        <p class="lead">Username : test </p>
+        <p class="lead">Password : test </p>
+        <hr>
+        <br>
+        {% if session.logged_in == NULL %}
+                <a href="/register" class="btn btn-primary btn-lg">Register</a>
+                <a href="/login" class="btn btn-success btn-lg">Login</a>
+        {% else %}
+                <a href="/img_upload" class="btn btn-primary btn-lg">Upload Image</a>
+        {% endif %}
+
+</div>
+
+{% endblock %}
